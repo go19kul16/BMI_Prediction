@@ -6,3 +6,4 @@ streamlit==1.19.0
 openpyxl==3.1.2
 seaborn==0.12.2
 ipython==8.14.0
+sklearn==0.0.post5
