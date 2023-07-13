@@ -11,11 +11,11 @@ st.header(":green[BMI] PREDICTION")
 col1,col2=st.columns(2)
         
 with col1:
-    weight=st.number_input("Enter Your Weight(in kgs)",step=5)
+    weight=st.number_input("Enter Your Weight (in kgs)",step=5)
     gender=st.radio("Select Your Gender",('Male','Female'))
 with col2:
     
-    height=st.number_input("Enter Your Height(in Cms)",step=1,min_value=1)
+    height=st.number_input("Enter Your Height (in Cms)",step=1,min_value=1)
 
 
 details=[]
