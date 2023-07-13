@@ -146,6 +146,6 @@ if st.button("Submit"):
     elif s=='OverWeight':
         st.subheader("You're :orange[OverWeight]:cry:")
     elif s=='Obesity':
-        st.subheader("You're :orange[Obesity]:disappointed_relieved:")
+        st.subheader("You're :orange[Obese]:disappointed_relieved:")
     elif s=='Extremely Obese':
         st.subheader("You're :red[Extremely Obese]:sweat:")
