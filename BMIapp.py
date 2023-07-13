@@ -136,7 +136,6 @@ if st.button("Submit"):
     #Live predictor
 
 
-    
     s=lp(details)
     if s=='Normal':
         st.subheader("You're :green[Normal] :blush:")
