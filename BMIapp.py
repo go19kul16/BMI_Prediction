@@ -137,16 +137,4 @@ if st.button("Submit"):
 
 
     
-    s=lp(details)
-    if s=='Normal':
-        st.subheader("You're :green[Normal] :blush:")
-    elif s=='Extremely Weak':
-        st.subheader("You're :blue[Extremely Weak] :slightly_frowning_face:")
-    elif s=='Weak':
-        st.subheader("You're :blue[Weak] :confused:")
-    elif s=='OverWeight':
-        st.subheader("You're :orange[OverWeight]:cry:")
-    elif s=='Obesity':
-        st.subheader("You're :orange[Obesity]:disappointed_relieved:")
-    elif s=='Extremely Obese':
-        st.subheader("You're :red[Extremely Obese]:sweat:")
+    st.subheader(lp(details))
