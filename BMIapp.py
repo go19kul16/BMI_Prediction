@@ -15,18 +15,18 @@ with col1:
     gender=st.radio("Select Your Gender",('Male','Female'))
 with col2:
     
-    age=st.number_input("Enter Your Age",step=1,min_value=1,max_value=100)
+    height=st.number_input("Enter Your Height",step=1,min_value=1)
 
 
 details=[]
 details.append(gender)
+details.append(height)
 details.append(weight)
-details.append(age)
 
 if st.button("Submit"):
     st.write(":blue[Gender:]", details[0])
-    st.write(":blue[Weight:]",details[1])
-    st.write(":blue[Age:]",details[2])
+    st.write(":blue[Height:]",details[1])
+    st.write(":blue[Weight:]",details[2])
     with st.spinner(text="PLEASE WAIT : Result Take a minute To Process"):
         time.sleep(15)
     data = pd.read_csv('500_Person_Gender_Height_Weight_Index.csv')
@@ -137,4 +137,16 @@ if st.button("Submit"):
 
 
     
-    st.subheader(lp(details))
+    s=lp(details)
+    if s=='Normal':
+        st.subheader("You're :green[Normal] :blush:")
+    elif s=='Extremely Weak':
+        st.subheader("You're :blue[Extremely Weak] :slightly_frowning_face:")
+    elif s=='Weak':
+        st.subheader("You're :blue[Weak] :confused:")
+    elif s=='OverWeight':
+        st.subheader("You're :orange[OverWeight]:cry:")
+    elif s=='Obesity':
+        st.subheader("You're :orange[Obesity]:disappointed_relieved:")
+    elif s=='Extremely Obese':
+        st.subheader("You're :red[Extremely Obese]:sweat:")
